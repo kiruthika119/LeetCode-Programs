@@ -9,6 +9,9 @@ class Solution {
             if(nums[i] < 0)
               neg++;
         }
-        return Math.max(pos, neg);
+        if(pos > neg)
+          return pos;
+        else 
+          return neg;
     }
 }
